@@ -1,7 +1,7 @@
-# Normalize line endings
+﻿# Normalize line endings
 * text=auto
 
-# Specific file types (optional)
+# Node.js specific
 *.js text
 *.json text
 *.md text
