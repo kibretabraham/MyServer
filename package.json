@@ -13,5 +13,17 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1"
+<<<<<<< HEAD
   }
+=======
+  },
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/kibretabraham/MyServer.git"
+},
+  "bugs": {
+    "url": "https://github.com/kibretabraham/MyServer/issues"
+  },
+  "homepage": "https://github.com/kibretabraham/MyServer#readme"
+>>>>>>> 432b2d2 (Clean commit - removed leaked token)
 }
