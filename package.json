@@ -2,7 +2,7 @@
   "name": "myserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -12,18 +12,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1"
-<<<<<<< HEAD
-  }
-=======
+    "express": "^5.2.1",
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5"
   },
   "repository": {
-  "type": "git",
-  "url": "git+https://github.com/kibretabraham/MyServer.git"
-},
+    "type": "git",
+    "url": "git+https://github.com/kibretabraham/MyServer.git"
+  },
   "bugs": {
     "url": "https://github.com/kibretabraham/MyServer/issues"
   },
   "homepage": "https://github.com/kibretabraham/MyServer#readme"
->>>>>>> 432b2d2 (Clean commit - removed leaked token)
 }
