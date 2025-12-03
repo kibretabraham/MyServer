@@ -1,16 +1,25 @@
-const express = require("express");
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
 const app = express();
+app.use(cors());
+app.use(bodyParser.json());
 
-app.use(express.json());
+let messages = [];
 
-// Simple endpoint to echo back what the user sends
-app.post("/echo", (req, res) => {
-  res.json({ message: req.body.message });
+app.get('/messages', (req, res) => {
+  res.json(messages);
 });
 
-// Use Render-assigned port, fallback to 3000 for local testing
+app.post('/messages', (req, res) => {
+  const { text } = req.body;
+  if (text) messages.push(text);
+  res.json({ success: true, messages });
+});
+
 const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+
+
